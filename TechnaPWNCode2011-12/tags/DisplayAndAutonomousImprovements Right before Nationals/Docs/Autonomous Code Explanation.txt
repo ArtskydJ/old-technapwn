@@ -1,0 +1,31 @@
+Things this code does:
+
+Gets the input.
+Processes the Autonomous
+Outputs to motors.
+
+
+
+Initialize variables
+
+If we're in the Initialize-next-step mode:
+Determine whether or not we are even running autonomous in order to have a no autonomous (this can be scrapped in favor of a "No Autonomous" Routine)
+
+Display the Current Autonomous Routine, step number, and Step name on the screen
+
+Figure out if motor values should be changed based on step data, and if so, mark them to be changed (Should move this to the executing-step-until-trip-condition mode)
+
+Reset timers, encoders, and gyro sensors to a zero value in order to measure progress of these things during the step.
+
+Exit out of the Initialize-next-step mode in order to be in the executing-step-until-trip-condition mode
+
+If we're in the Executing-step-until-trip-condition mode:
+
+If we're on the last step, then stop motors. (Eliminate the need for this by making a separate mode (or state) called Waiting-for-usercontrol-mode)
+
+Check to see if the joystick has moved. If so, exit autonomous.
+
+Again, if we're in the Initialize-next-step mode:
+
+If the step says to jump to another step, and if the conditions have been met for that jump, then jump.
+

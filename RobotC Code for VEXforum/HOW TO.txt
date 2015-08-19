@@ -1,0 +1,5 @@
+﻿How to use:
+1. Use RobotC's [Motor and Sensor Setup] to assign correct motor ports to motors and to reverse motor ports that need it.
+2. Use RobotC's [Motor and Sensor Setup] to assign correct sensor ports to sensors.
+3. Open [Globals.c] and comment out the flags that you don't need.
+4. Download the code to your robot.

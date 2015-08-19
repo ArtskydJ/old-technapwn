@@ -1,0 +1,11 @@
+	AutonomousArray[2][0].StepName = "ProgrammingSklls";
+	
+	AutonomousArray[2][1].StepName = "";
+	AutonomousArray[2][1].LiftPower = 0;
+	AutonomousArray[2][1].IntakePower = 0;
+	AutonomousArray[2][1].DriveType = STRAIGHT;
+	AutonomousArray[2][1].DrivePower = 0;
+	AutonomousArray[2][1].Timeout = 0;
+	AutonomousArray[2][1].EncoderTicks = 0;
+	AutonomousArray[2][1].JumpCondition = NOCONDITION;
+	AutonomousArray[2][1].JumpToStep = 0;

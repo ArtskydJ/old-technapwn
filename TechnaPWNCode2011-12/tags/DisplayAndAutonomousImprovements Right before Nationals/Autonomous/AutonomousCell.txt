@@ -1,0 +1,27 @@
+Old:
+
+=CHAR(9)&"AutonomousArray["&$A$1&"]["&A3&"].StepName = """&B3&""""&";"&CHAR(10)&CHAR(9)&"AutonomousArray["&$A$1&"]["&A3&"].LiftPower = "&C3&";"&CHAR(10)&CHAR(9)&"AutonomousArray["&$A$1&"]["&A3&"].IntakePower = "&D3&";"&CHAR(10)&CHAR(9)&"AutonomousArray["&$A$1&"]["&A3&"].DriveType = "&E3&";"&CHAR(10)&CHAR(9)&"AutonomousArray["&$A$1&"]["&A3&"].DrivePower = "&F3&";"&CHAR(10)&CHAR(9)&"AutonomousArray["&$A$1&"]["&A3&"].Timeout = "&G3&";"&CHAR(10)&CHAR(9)&"AutonomousArray["&$A$1&"]["&A3&"].EncoderTicks = "&H3&";"&CHAR(10)&CHAR(9)&"AutonomousArray["&$A$1&"]["&A3&"].JumpCondition = "&I3&";"&CHAR(10)&CHAR(9)&"AutonomousArray["&$A$1&"]["&A3&"].JumpToStep = "&J3&";"&CHAR(10)
+
+New:
+
+(Name)
+=Constants!$B$14  &Constants!$B$13  &"("""& B2 & """);"
+
+(Step)
+=Constants!$B$14  &Constants!$B$2  &"("""& B3 & """," &REPT(" ",  Constants!$B$3  -LEN(B3) -3) &
+ C3 & "," &REPT(" ",  Constants!$B$4  -LEN(C3) -1) &
+ D3 & "," &REPT(" ",  Constants!$B$5  -LEN(D3) -1) &
+ E3 & "," &REPT(" ",  Constants!$B$6  -LEN(E3) -1) &
+ F3 & "," &REPT(" ",  Constants!$B$7  -LEN(F3) -1) &
+ G3 & "," &REPT(" ",  Constants!$B$8  -LEN(G3) -1) &
+ H3 & "," &REPT(" ",  Constants!$B$9  -LEN(H3) -1) &
+ I3 & "," &REPT(" ",  Constants!$B$10 -LEN(I3) -1) &
+ J3 & "," &REPT(" ",  Constants!$B$11 -LEN(J3) -1) &
+ K3 &REPT(" ",  Constants!$B$12 -LEN(K3)) & "); "
+
+Without Carraige Returns:
+=Constants!$B$14  &Constants!$B$2  &"("""& B3 & """," &REPT(" ",  Constants!$B$3  -LEN(B3) -3) & C3 & "," &REPT(" ",  Constants!$B$4  -LEN(C3) -1) & D3 & "," &REPT(" ",  Constants!$B$5  -LEN(D3) -1) & E3 & "," &REPT(" ",  Constants!$B$6  -LEN(E3) -1) & F3 & "," &REPT(" ",  Constants!$B$7  -LEN(F3) -1) & G3 & "," &REPT(" ",  Constants!$B$8  -LEN(G3) -1) & H3 & "," &REPT(" ",  Constants!$B$9  -LEN(H3) -1) & I3 & "," &REPT(" ",  Constants!$B$10 -LEN(I3) -1) & J3 & "," &REPT(" ",  Constants!$B$11 -LEN(J3) -1) & K3 &REPT(" ",  Constants!$B$12 -LEN(K3)) & "); "
+
+ 
+ To repeat Characters:
+  =A1&REPT(" ",15-LEN(A1))

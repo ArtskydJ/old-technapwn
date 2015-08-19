@@ -1,0 +1,13 @@
+If the robot won't go to Operator Mode after Autonomous is over, try changing:
+
+task autonomous()
+{
+	while (true)
+	{
+
+to:
+
+task autonomous()
+{
+	while (bIfiAutonomousMode)
+	{

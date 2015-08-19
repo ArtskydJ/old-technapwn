@@ -1,0 +1,2 @@
+Change Kp from .75 to 2
+Test using PID controller for only one side (the other one plays "catch up")
